@@ -72,7 +72,7 @@ function play(){
     } 
     if(gameover == true){
         playButton.disabled = true;
-        resultArea.textContent = "끝났습니다."
+        resultArea.textContent = "끝났습니다. 초기화를 눌러주세요."
     }
 
 }
@@ -81,12 +81,14 @@ function reset(){
     userInput.textContent ="";
     chanceArea.textContent = "남은 기회 : 5번";
     historyArea.textContent = "입력한 숫자 :";
-    resultArea.textContent = "시작을 눌러주세요."
+    resultArea.textContent = "숫자를 입력해주세요."
+    history=[];
+    chance = 5;
     pickNumber();
-    playButton.disabled = true;
-    resetButton.disabled = true;
+    playButton.disabled = false;
+    resetButton.disabled = false;
     startButton.disabled = false;
-    userInput.disabled = true;
+    userInput.disabled = false;
 }
 
 
