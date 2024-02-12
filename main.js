@@ -72,6 +72,7 @@ function play(){
     } 
     if(gameover == true){
         playButton.disabled = true;
+        resultArea.textContent = "끝났습니다."
     }
 
 }
