@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>숫자 맞추기 게임</h1>
+      <div class="imgbox"></div>
+      <div id="result-area">1~100까지 숫자를 입력하세요.</div>
+      <div id="chance-area">남은 기회 : 5번</div>
+      <input type="text" id="user-input" disabled required/>
+      <button id="start-button">시작</button>
+      <button id="play-button" disabled>실행</button>
+      <button id="reset-button" disabled>초기화</button>
+      <button id="back-button" onclick="location.href='index.html'">BACK</button>
+      <div id="history-area">입력한 숫자 :</div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
